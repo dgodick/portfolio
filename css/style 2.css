@@ -1,0 +1,94 @@
+/*STARTER CODE*/
+
+/*
+We have started some of the selectors for you.
+For others we have provided hints on what the selectors should be.
+There are some missing selectors.
+
+Make sure to learn what the starter code does!!
+*/
+
+body{
+  color: black;
+  font-family: "Andika", sans-serif;
+  margin: 1.2em;
+  background-color:#E6E6FA;
+}
+
+main{
+  margin-bottom: 100px;
+  text-align: justify;
+}
+
+#profile{
+  border:5px solid black;
+}
+
+h1{
+  color: #871F78;
+  font-size: 30pt;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+h3{
+  text-align: left;
+  padding: 10px;
+}
+
+img{
+    height: 300px;
+
+    /*float: left;*/
+}
+
+caption{
+  margin:5px 0px;
+}
+
+p{
+  font-size: 16px;
+  padding: 10px;
+  color: #871F78;
+}
+
+a{
+  font-size: 16px;
+  color:blue;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+ol{
+  padding: 20px;
+  color: #871F78
+}
+
+figcaption {
+  display: block;
+}
+
+#intro{
+  text-align: right;
+}
+
+:focus{
+  border: 2px solid yellow;
+}
+
+footer{
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  background-color:#871F78;
+  text-align:center;
+  color: white;
+  min-height:20px;
+}
