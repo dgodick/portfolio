@@ -69,6 +69,10 @@ ol, ul{
   justify-content: center;
 
 }
+.nav_links{
+  flex-wrap: wrap;
+  list-style: none;
+}
 
 nav a{
   color: black;
@@ -123,7 +127,7 @@ a.skip:focus{
 #profile img{
     justify-self: center;
     align-self: center;
-  
+
 }
 
 #intro{
@@ -176,6 +180,44 @@ a.skip:focus{
   -webkit-text-decoration-style: dotted;
   text-decoration-style: dotted;
   }
+
+  fieldset{
+     border-radius: 10px;
+  }
+  legend{
+     text-align: center;
+  }
+  fieldset div{
+     border: 2px solid black;
+     margin: 2%;
+     padding: 1%;
+     border-radius: 5px;
+  }
+
+  .contact{
+     display: grid;
+     grid-template-columns: auto 1fr;
+     grid-row-gap: 5px;
+
+  }
+
+  input[type=reset], input[type=submit]{
+     border: 1px solid black;
+     width: 100px;
+     padding: 5%;
+     margin-left: 10%;
+     -webkit-box-sizing: content-box;
+     box-sizing: content-box;
+  }
+
+  input:focus{
+    border: 2px solid black;
+    background: #CCCCCC;
+  }
+  input, textarea, select{
+     background-color:#FFFFFF;
+  }
+
 
 footer{
   position:fixed;
