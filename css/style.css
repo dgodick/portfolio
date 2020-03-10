@@ -33,7 +33,7 @@ h3{
 
 img{
     height: 300px;
-    width: 300px;
+
 }
 
 p{
@@ -49,6 +49,10 @@ a{
   text-decoration-style: solid;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+nav ul{
+  line-height: 25px;
 }
 
 ol, ul{
@@ -119,6 +123,7 @@ a.skip:focus{
 #profile img{
     justify-self: center;
     align-self: center;
+  
 }
 
 #intro{
