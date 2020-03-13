@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,38 +22,52 @@
 
 <body>
   <header>
-		<nav>
-			<h1>DANIELLE GODICK</h1>
-      <ul class="nav_links">
-  			<li class="nav_item"><a href="index.html">About</a></li>
-  			<li class="nav_item"><a href="work.html">Work</a></li>
-  		</ul>
-		</nav>
+    <nav class="navbar">
+      <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+              <i class="fa fa-bars"></i>
+              <!-- Menu -->
+          </label>
+      <a href="index.html" class="logo">Danielle Godick</a>
+      <input type="checkbox" id="chkToggle"></input>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="index.html" class="nav-links">About</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">Work</a>
+        </li>
+      </ul>
+    </nav>
 	</header>
 
-<form action="https://formspree.io/xwkoapqg" method="POST">
+<main>
+  <form action="https://formspree.io/xwkoapqg" method="POST">
 
 <fieldset>
    <legend>Your Info</legend>
-   <div class = "contact">
+   <div class = "contact_form">
       <label for ="first_name">First Name:</label><input type="text" id ="name" name="name"/>
       <label for ="last_name">Last Name:</label><input type="text" id ="name" name="name"/>
-      <label for ="emailaddr">Address:</label><textarea id = "addr"></textarea>
-   </div>
-   <div>
+      <label for ="emailaddr">Email Address:</label><textarea id = "addr"></textarea>
+
    <br>Subject of Message:
    <label for ="subject"></label><textarea id = "subject"></textarea>
    <br>Input Message Here:
    <label for ="message"></label><textarea id = "message"></textarea>
-   </div>
 
-
-   <div>
+   <span>
       <input type="reset"/>
       <input type="submit" value=" Submit"/>
+   </span>
    </div>
+
    </fieldset>
    </form>
+</main>
 
+
+<footer>
+  <p>Danielle Godick <br/> University of Michigan 2020 <br/> Contact information: <a href="mailto:godickdanielle@gmail.com"> godickdanielle@gmail.com</a></p>
+</footer>
 </body>
 </html>

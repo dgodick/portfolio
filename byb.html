@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Work</title>
+	<title>Backyard Brains</title>
   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160244040-1"></script>
@@ -23,148 +24,197 @@
   <div class="skip"><a href="#main">Skip to Main Content</a></div>
 
 	<header class="headerbyb">
-		<nav>
-			<h1>DANIELLE GODICK</h1>
-
-      <ul class="nav_links">
-  			<li class="nav_item"><a href="index.html">About</a></li>
-  			<li class="nav_item"><a href="work.html">Work</a></li>
-  		</ul>
-		</nav>
+			<nav class="navbar">
+				<label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+								<i class="fa fa-bars"></i>
+								<!-- Menu -->
+						</label>
+				<a href="index.html" class="logo">Danielle Godick</a>
+				<input type="checkbox" id="chkToggle"></input>
+				<ul class="main-nav" id="js-menu">
+					<li>
+						<a href="index.html" class="nav-links">About</a>
+					</li>
+					<li>
+						<a href="#" class="nav-links">Work</a>
+					</li>
+				</ul>
+			</nav>
 
 	</header>
 
-	<main>
+	<main id="main" class="bybmain">
+		<button onclick="topFunction()" id="scrollButton" title="Go to top">Top</button>
 		<h2>UX DESIGN/RESEARCH
     <br>SI 405/487: USER EXPERIENCE FINAL PROJECT</br></h2>
 		<h4>School of Information - University of Michigan</h4>
     <h4>FALL 2019 - winter 2020 (in progress) | ANN ARBOR, MI</h4>
 
+		<div class="byb-container">
 
-    <img src = "images/byb_logo.png" alt="byblogo" id="headerimage"/>
+			<div class="byblogo1">
+				<img src = "images/byb_logo.png" alt="byblogo" id="headerimage"/>
+			</div>
 
-    <h3>OVERVIEW</h3>
+				<div>
+						<h3>OVERVIEW</h3>
+						<p>The goal of this course is to provide students with real world experience in working on a challenging UX project with a client. This project requires our team to apply our UX skills and knowledge to conduct UX research, analyze requirements, design, prototype, and evaluate.</p>
 
-		<p>The goal of this course is to provide students with real world experience in working on a challenging UX project with a client. This project requires our team to apply our UX skills and knowledge to conduct UX research, analyze requirements, design, prototype, and evaluate.</p>
+    				<p>Our team has been matched to a local Ann Arbor company known as Backyard Brains, which has a mission statement to make learning neuroscience fun, accessible, and affordable for teachers of students of all levels.</p>
+				</div>
 
-    <p>Our team has been matched to a local Ann Arbor company known as Backyard Brains, which has a mission statement to make learning neuroscience fun, accessible, and affordable for teachers of students of all levels.</p>
+		<div class="byb-problem">
+    	<h3>PROBLEM STATEMENT</h3>
 
-    <h3>PROBLEM STATEMENT</h3>
+    	<p>Teachers that use Backyard Brains products are lacking a reliable system of support and guidance following their purchase of the products.</p>
 
-    <p>Teachers that use Backyard Brains products are lacking a reliable system of support and guidance following their purchase of the products.</p>
+		</div>
 
+		<div class="byb-method">
+    	<h3>METHODOLOGY</h3>
+      	<ol>
+	        <li>CLIENT RESEARCH &amp; GATHERING REQUIREMENTS</li>
+	        <li>RESEARCH QUESTION &amp; METHODS</li>
+	        <li>TARGET USERS &amp; RECRUITMENT</li>
+	        <li>STAKEHOLDER ANALYSIS</li>
+	        <li>COMPETITIVE ANALYSIS</li>
+	        <li>FUTURE STEPS &amp; METHODOLOGY</li>
+      	</ol>
 
-    <h3>METHODOLOGY</h3>
-      <ol>
-        <li>CLIENT RESEARCH & GATHERING REQUIREMENTS</li>
-        <li>RESEARCH QUESTION & METHODS</li>
-        <li>TARGET USERS & RECRUITMENT</li>
-        <li>STAKEHOLDER ANALYSIS</li>
-        <li>COMPETITIVE ANALYSIS</li>
-        <li>FUTURE STEPS & METHODOLOGY</li>
-      </ol>
-
-    <h3>CLIENT RESEARCH & GATHERING REQUIREMENTS</h3>
-
-    <p>Backyard Brains Products/Services:
-    <br>Backyard Brains’ products can best be described as educational neuroscience tools. These tools mimic real equipment used by neuroscientists in the field and allow anyone to be able to study the brain in a hands-on fashion. Backyard Brains’ products are experiential and teach users about how the brain interacts with senses, memories, and emotions.</br>
-
-    <img src = "images/byb.png" alt="bybkits" id="kits"/>
-
-
-      <br>Requirements Gathering:</br>
-      <br>After meeting with Backyard Brains staff on a biweekly basis thus far, we have a better understanding of what the staff’s requirements are:</br>
-      <ol>
-        <li>We must understand customer motivations and reasons for buying such products, as well as what exactly customers are doing with the products once they purchase them.</li>
-        <li>We must understand what teachers need and want, in terms of support, after buying Backyard Brains products by analyzing user feedback received from a survey that was sent to existing users.</li>
-        <li>We must investigate and understand what types of customers are not buying products and why.</li>
-      </ol>
-    </p>
-
-    <p>Project Goals:</p>
-    <p>Specific features on the website to be implemented to improve the learning and onboarding experience for customers:</p>
-    <ul style="list-style-type:circle;">
-      <li>The general UX design/user flow of the existing page is poorly designed.</li>
-      <li>We plan to provide users with easier methods to look for and view experiments and tutorials pertaining to Backyard Brains products.</li>
-      <li>We also plan to create a support feature, which will be a community forum page, where users can chat and interact with other users, incorporating peer-to-peer assistance.</li>
-      <li>A future goal would be to make Backyard Brains’ software, which is used to record and interpret data when using the products, available on the teacher portal to users so Backyard Brains can have access and the ability to manipulate/analyze user data.</li>
-    </ul>
+			</div>
 
 
-    <h3>RESEARCH QUESTION & METHODS</h3>
-    <p>Research Question:   How can Backyard Brains provide better, more accessible online support for their users in order to improve their experience with the BYB suite of products?</p>
+			<div class="byb-research">
+    		<h3>CLIENT RESEARCH &amp; GATHERING REQUIREMENTS</h3>
 
-    <p>Research Methods:</p>
-    <p>We will perform surveys and interviews, which will allow us to obtain both qualitative and quantitative data that can help inform our design in the future. Surveys will provide more of the quantitative data and the interviews will provide most of the qualitative data. Using a survey will allow us to reach a higher volume of users and gain insight into their attitudes, behaviors, and characteristics. Interviews will be done on a smaller amount of users, but will provide a deeper understanding of the users’ behavior and motivations.</p>
-
-    <p>Both methods will offer insight into the users’ mindsets and tell us, from their point of view, what they need and desire from the proposed teacher portal. Our clients have given us some background into their user base, however it is important to hear directly from the customers.</p>
-
-    <h3>TARGET USERS & RECRUITMENT</h3>
-
-    <p>Target Users:</p>
-    <p>Our target user is a middle to high school teacher, likely employed at a more affluent school. The teachers are looking for ways to engage their students in the topics of neuroscience, and give them hands-on application opportunities that go beyond simply reading about neuroscience concepts in a textbook. However, what is especially important to take into consideration about our target user is their level of expertise and domain knowledge surrounding the subject, or lack thereof. Therefore, our user’s priority is being able to rely on a smooth support system when it comes to using the Backyard Brains products that allows them to confidently utilize the tools in their classrooms.</p>
-
-    <p>Recruitment:</p>
-    <p>We plan to recruit users through email. The client currently has a list of email addresses for their users, which we plan to use for recruitment and interview purposes. Via email, our goal is to send out online surveys and interviews to learn more about the current user pains, needs, and how to improve their experience. The user base for Backyard Brains is quite dedicated, and will more than likely be very enthusiastic in participating in user research, because it will ultimately benefit their classroom experience as well.</p>
+    		<p>Backyard Brains Products/Services:</p>
+    		<p>Backyard Brains’ products can best be described as educational neuroscience tools. These tools mimic real equipment used by neuroscientists in the field and allow anyone to be able to study the brain in a hands-on fashion. Backyard Brains’ products are experiential and teach users about how the brain interacts with senses, memories, and emotions.</p>
 
 
-    <h3>STAKEHOLDER ANALYSIS</h3>
-
-    <p>Internal Stakeholders: The most prominent internal stakeholders for our project are the entities directly employed by the Backyard Brains organization themselves (i.e. BYB researchers/creators, graphic designers, and developers).</p>
-    <img src = "images/teacher.png" alt="teachers" id="stakeholder"/>
-
-    <p>External Stakeholders: The main users of Backyard Brains products, teachers, and their students constitute the main external stakeholders. It is crucial for Backyard Brains to understand customers’ needs and wants when creating their products and doing customer outreach.</p>
-    <img src = "images/students.png" alt="students" id="stakeholder"/>
-
-    <h3>COMPETITIVE ANALYSIS</h3>
-
-    <p>Before beginning our competitive analysis, we knew that this was a niche industry, and there would not be many direct competitors. However, while interactive kits for neuroscience is a niche topic, educational resources are abundant. Therefore, it was important that we defined certain qualifying metrics against which to compare the competition.</p>
-
-    <p>Metrics of Success for Competition:</p>
-    <ol>
-      <li>Interactivity​: How interactive is the product? It is important for us to gauge the extent to which a competitor facilitates hands-on engagement for the user, as this is one of the main selling points for the Backyard Brains suite of products.</li>
-      <li> Adaptability: ​Can the competitor’s product be adapted or changed to best fit the needs of the user? Although the Backyard Brains products are each meant to teach a certain concept, the intent is for teachers to be able to mold them to best fit the needs of their classroom.</li>
-      <li>Pedagogical value: ​At its core, Backyard Brains’ mission is to teach and impart neuroscience knowledge upon younger students. Therefore, an important metric to consider is what the learning value of a company’s product is.</li>
-      <li>Facilitating contemporal/simultaneous collaboration: ​An important part of hands-on learning is the ability to collaborate and communicate in real time. Whether this is teachers collaborating with other teachers, students collaborating with other students, or a combination of the two, we want to consider the extent to which this is facilitated through the competition.</li>
-    </ol>
-
-    <p>Direct Competition:
-      <br>The most direct competitor is a website called ​Neuroscience for Kids​ that was developed by Dr. Eric H Chudler, the executive director of neurotechnology at the University of Washington. Chudler’s website is aimed at simplifying neuroscience concepts for kids. The online platform provides interactive animations and games to give younger students with an affinity for learning about the inner workings of the brain an opportunity to explore their interests. While operating in a similar space, it is arguably almost always better to learn by doing rather than simply watching or reading. Therefore, Backyard Brains’ interactive, physical experiments that allow students to not just observe, but take an active role in their neuroscience education, definitely has the edge over Chudler’s platform.</br>
-    </p>
-
-    <p>Indirect Competition:
-      <br>The closest indirect competitor Backyard Brains has is the variety of neuroscience textbooks that explain either the same or similar concepts that are portrayed in the Backyard Brains experiment kits. The indirect competitors do not pose much of a threat to Backyard Brains since most neuroscience textbooks are tailored for college students and higher education, and thus not for kids. Ultimately, textbooks serve as indirect competition in terms of their inherent pedagogical value, but lack the interactive capabilities and the ability to serve as a facilitator of classroom collaboration.</br>
-    </p>
-
-    <p>Analogous Competition:
-      <br>Analogous competitors would be ​Twitter, Pinterest, online teacher forums, and other online resources for teachers​. Twitter allows teachers to connect with each other and receive advice and resources from these connections. Pinterest and online teacher forums also allow the sharing of resources and ideas.</br>
-
-      <img src = "images/twitter.png" alt="twitter" id="competition"/>
-      <img src = "images/pinterest.jpg" alt="pinterest" id="competition"/>
-
-      <br>Backyard Brains and the teacher platform we are developing for them are analogous to these other online tools because they all provide a community for and resources to teachers, but in different contexts. Twitter, Pinterest, and teacher forums are all social medias. Backyard Brains is a company selling neuroscience toys that wants to incorporate a teacher resource platform into their site. Both are in different domains and serve their general customers differently, but offer, or will offer, resource sharing for teachers. We can use Twitter, Pinterest, teacher forums, and other teacher-centered platforms to gain insight into customer needs, behaviors, and goals.</br>
-
-    <h3>FUTURE STEPS & METHODOLOGY</h3>
-    <p>In the coming winter semester, I am looking forward to continuing my Capstone Project and serving the needs of both our client, Backyard Brains, and their customers. There are numerous milestones to come in regards to this project, and I am excited to begin working on the actual interface and applying interactive design concepts to this project. Below is a brief layout of my team’s methodology to be completed in the coming semester. Overall, I am excited to continue to work collaboratively with my team, consistently communicate with our client, and work at the intersection of technology, data, and people.</p>
+				<div class="bybkit">
+					<img src = "images/byb.png" alt="bybkits" id="kits"/>
+				</div>
 
 
-    <h3>FUTURE METHODOLOGY</h3>
-      <ol>
-        <li>SURVEY DISTRIBUTION, INTERVIEWS, ANALYSIS - USER RESEARCH</li>
-        <li>PERSONAS & SCENARIOS</li>
-        <li>PAPER PROTOTYPE</li>
-        <li>DIGITAL PROTOTYPE</li>
-        <li>USER TESTING</li>
-        <li>ITERATE</li>
-      </ol>
+	      <p>Requirements Gathering:</p>
+	      <p>After meeting with Backyard Brains staff on a biweekly basis thus far, we have a better understanding of what the staff’s requirements are:</p>
+	      <ol>
+	        <li>We must understand customer motivations and reasons for buying such products, as well as what exactly customers are doing with the products once they purchase them.</li>
+	        <li>We must understand what teachers need and want, in terms of support, after buying Backyard Brains products by analyzing user feedback received from a survey that was sent to existing users.</li>
+	        <li>We must investigate and understand what types of customers are not buying products and why.</li>
+	      </ol>
+
+
+		    <p>Project Goals:</p>
+		    <p>Specific features on the website to be implemented to improve the learning and onboarding experience for customers:</p>
+		    <ul style="list-style-type:circle;">
+		      <li>The general UX design/user flow of the existing page is poorly designed.</li>
+		      <li>We plan to provide users with easier methods to look for and view experiments and tutorials pertaining to Backyard Brains products.</li>
+		      <li>We also plan to create a support feature, which will be a community forum page, where users can chat and interact with other users, incorporating peer-to-peer assistance.</li>
+		      <li>A future goal would be to make Backyard Brains’ software, which is used to record and interpret data when using the products, available on the teacher portal to users so Backyard Brains can have access and the ability to manipulate/analyze user data.</li>
+		    </ul>
+
+</div>
+
+		<div>
+	    <h3>RESEARCH QUESTION &amp; METHODS</h3>
+	    <p>Research Question:   How can Backyard Brains provide better, more accessible online support for their users in order to improve their experience with the BYB suite of products?</p>
+
+	    <p>Research Methods:</p>
+	    <p>We will perform surveys and interviews, which will allow us to obtain both qualitative and quantitative data that can help inform our design in the future. Surveys will provide more of the quantitative data and the interviews will provide most of the qualitative data. Using a survey will allow us to reach a higher volume of users and gain insight into their attitudes, behaviors, and characteristics. Interviews will be done on a smaller amount of users, but will provide a deeper understanding of the users’ behavior and motivations.</p>
+
+	    <p>Both methods will offer insight into the users’ mindsets and tell us, from their point of view, what they need and desire from the proposed teacher portal. Our clients have given us some background into their user base, however it is important to hear directly from the customers.</p>
+		</div>
+
+		<div>
+	    <h3>TARGET USERS &amp; RECRUITMENT</h3>
+
+	    <p>Target Users:</p>
+	    <p>Our target user is a middle to high school teacher, likely employed at a more affluent school. The teachers are looking for ways to engage their students in the topics of neuroscience, and give them hands-on application opportunities that go beyond simply reading about neuroscience concepts in a textbook. However, what is especially important to take into consideration about our target user is their level of expertise and domain knowledge surrounding the subject, or lack thereof. Therefore, our user’s priority is being able to rely on a smooth support system when it comes to using the Backyard Brains products that allows them to confidently utilize the tools in their classrooms.</p>
+
+	    <p>Recruitment:</p>
+	    <p>We plan to recruit users through email. The client currently has a list of email addresses for their users, which we plan to use for recruitment and interview purposes. Via email, our goal is to send out online surveys and interviews to learn more about the current user pains, needs, and how to improve their experience. The user base for Backyard Brains is quite dedicated, and will more than likely be very enthusiastic in participating in user research, because it will ultimately benefit their classroom experience as well.</p>
+		</div>
+
+
+		<div>
+	    <h3>STAKEHOLDER ANALYSIS</h3>
+
+	    <p>Internal Stakeholders: The most prominent internal stakeholders for our project are the entities directly employed by the Backyard Brains organization themselves (i.e. BYB researchers/creators, graphic designers, and developers).</p>
+
+			<div class="teacher">
+			<img src = "images/teacher.png" alt="teachers" id="stakeholder"/>
+		</div>
+
+	    <p>External Stakeholders: The main users of Backyard Brains products, teachers, and their students constitute the main external stakeholders. It is crucial for Backyard Brains to understand customers’ needs and wants when creating their products and doing customer outreach.</p>
+
+			<div class ="student">
+			<img src = "images/students.png" alt="students" id="stakeholder"/>
+		</div>
+
+	</div>
+
+		<div>
+	    <h3>COMPETITIVE ANALYSIS</h3>
+
+	    <p>Before beginning our competitive analysis, we knew that this was a niche industry, and there would not be many direct competitors. However, while interactive kits for neuroscience is a niche topic, educational resources are abundant. Therefore, it was important that we defined certain qualifying metrics against which to compare the competition.</p>
+
+	    <p>Metrics of Success for Competition:</p>
+	    <ol>
+	      <li>Interactivity​: How interactive is the product? It is important for us to gauge the extent to which a competitor facilitates hands-on engagement for the user, as this is one of the main selling points for the Backyard Brains suite of products.</li>
+	      <li> Adaptability: ​Can the competitor’s product be adapted or changed to best fit the needs of the user? Although the Backyard Brains products are each meant to teach a certain concept, the intent is for teachers to be able to mold them to best fit the needs of their classroom.</li>
+	      <li>Pedagogical value: ​At its core, Backyard Brains’ mission is to teach and impart neuroscience knowledge upon younger students. Therefore, an important metric to consider is what the learning value of a company’s product is.</li>
+	      <li>Facilitating contemporal/simultaneous collaboration: ​An important part of hands-on learning is the ability to collaborate and communicate in real time. Whether this is teachers collaborating with other teachers, students collaborating with other students, or a combination of the two, we want to consider the extent to which this is facilitated through the competition.</li>
+	    </ol>
+
+	    <p>Direct Competition:
+	      <br>The most direct competitor is a website called ​Neuroscience for Kids​ that was developed by Dr. Eric H Chudler, the executive director of neurotechnology at the University of Washington. Chudler’s website is aimed at simplifying neuroscience concepts for kids. The online platform provides interactive animations and games to give younger students with an affinity for learning about the inner workings of the brain an opportunity to explore their interests. While operating in a similar space, it is arguably almost always better to learn by doing rather than simply watching or reading. Therefore, Backyard Brains’ interactive, physical experiments that allow students to not just observe, but take an active role in their neuroscience education, definitely has the edge over Chudler’s platform.
+	    </p>
+
+	    <p>Indirect Competition:
+	      <br>The closest indirect competitor Backyard Brains has is the variety of neuroscience textbooks that explain either the same or similar concepts that are portrayed in the Backyard Brains experiment kits. The indirect competitors do not pose much of a threat to Backyard Brains since most neuroscience textbooks are tailored for college students and higher education, and thus not for kids. Ultimately, textbooks serve as indirect competition in terms of their inherent pedagogical value, but lack the interactive capabilities and the ability to serve as a facilitator of classroom collaboration.</br>
+	    </p>
+
+	    <p>Analogous Competition:</p>
+	     <p>Analogous competitors would be ​Twitter, Pinterest, online teacher forums, and other online resources for teachers​. Twitter allows teachers to connect with each other and receive advice and resources from these connections. Pinterest and online teacher forums also allow the sharing of resources and ideas.</p>
+
+				<div class="comp">
+	      <img src = "images/twitter.png" alt="twitter" id="competition"/>
+	      <img src = "images/pinterest.jpg" alt="pinterest" id="competition"/>
+			</div>
+	      <p>Backyard Brains and the teacher platform we are developing for them are analogous to these other online tools because they all provide a community for and resources to teachers, but in different contexts. Twitter, Pinterest, and teacher forums are all social medias. Backyard Brains is a company selling neuroscience toys that wants to incorporate a teacher resource platform into their site. Both are in different domains and serve their general customers differently, but offer, or will offer, resource sharing for teachers. We can use Twitter, Pinterest, teacher forums, and other teacher-centered platforms to gain insight into customer needs, behaviors, and goals.</p>
+
+		</div>
+
+		<div>
+	    <h3>FUTURE STEPS &amp; METHODOLOGY</h3>
+	    <p>In the coming winter semester, I am looking forward to continuing my Capstone Project and serving the needs of both our client, Backyard Brains, and their customers. There are numerous milestones to come in regards to this project, and I am excited to begin working on the actual interface and applying interactive design concepts to this project. Below is a brief layout of my team’s methodology to be completed in the coming semester. Overall, I am excited to continue to work collaboratively with my team, consistently communicate with our client, and work at the intersection of technology, data, and people.</p>
+		</div>
+
+
+
+		<div>
+	    <h3>FUTURE METHODOLOGY</h3>
+	      <ol>
+	        <li>SURVEY DISTRIBUTION, INTERVIEWS, ANALYSIS - USER RESEARCH</li>
+	        <li>PERSONAS &amp; SCENARIOS</li>
+	        <li>PAPER PROTOTYPE</li>
+	        <li>DIGITAL PROTOTYPE</li>
+	        <li>USER TESTING</li>
+	        <li>ITERATE</li>
+	      </ol>
+		</div>
+
+	</div>
 
 	</main>
 
-  <footer>
-		<p>Danielle Godick</p>
-  	<p>University of Michigan 2020</p>
-    <p>Contact information: <a href="mailto:godickdanielle@gmail.com"> godickdanielle@gmail.com</a></p>
+	<footer>
+		<p>Danielle Godick <br/> University of Michigan 2020 <br/> Contact information: <a href="mailto:godickdanielle@gmail.com"> godickdanielle@gmail.com</a></p>
 	</footer>
+
+	<script type="text/javascript" src="js/top.js"></script>
+
 
 </body>
 </html>

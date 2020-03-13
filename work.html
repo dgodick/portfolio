@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160244040-1"></script>
@@ -24,64 +25,81 @@
 
 	<header>
 		<nav>
-			<h1>DANIELLE GODICK</h1>
-			<a href="index.html">About</a>
-			<a href="work.html">Work</a>
+			<nav class="navbar">
+				<label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+								<i class="fa fa-bars"></i>
+								<!-- Menu -->
+						</label>
+				<a href="index.html" class="logo">Danielle Godick</a>
+				<input type="checkbox" id="chkToggle"></input>
+				<ul class="main-nav" id="js-menu">
+					<li>
+						<a href="index.html" class="nav-links">About</a>
+					</li>
+					<li>
+						<a href="#" class="nav-links selected">Work</a>
+					</li>
+				</ul>
+			</nav>
 		</nav>
 	</header>
 
-	<main>
+	<main id="main">
 		<h2>Work</h2>
 
 		<h4>Below are a few of my projects. Check them out!</h4>
+		<div class="work-container">
+
+				<div class="flip-card">
+		  		<div class="flip-card-inner">
+		    		<div class="flip-card-front" id="pnc">
+		      		<!-- <img src = "images/homepage/pnc.png" alt="pnc" class="work_page"> -->
+		    		</div>
+		    		<div class="flip-card-back">
+		      		<h4>PNC Financial Services Group</h4>
+		      		<p>Tech &amp; Innovation Intern</p>
+		      		<p>Summer 2019</p>
+							<p><a href="pnc.html" target="_blank">View more</a></p>
+		    		</div>
+		  		</div>
+				</div>
 
 		<div class="flip-card">
-  		<div class="flip-card-inner">
-    		<div class="flip-card-front">
-      		<img src = "images/homepage/pnc.png" alt="pnc" class="work_page">
-    </div>
-    <div class="flip-card-back">
-      <h4>PNC Financial Services Group</h4>
-      <p>Tech & Innovation Intern</p>
-      <p>Summer 2019</p>
-    </div>
-  </div>
-</div>
+			<div class="flip-card-inner">
+				<div class="flip-card-front" id="swift">
+					<!-- <img src = "images/homepage/swift.png" alt = "swift" class="work_page"/> -->
+				</div>
+				<div class="flip-card-back">
+					<h4>SWIFT</h4>
+					<p>UX Design/Research </p>
+					<p>SI 482: Interaction Design Studio</p>
+					<p><a href="swift.html" target="_blank">View more</a></p>
+				</div>
+			</div>
+		</div>
 
-<div class="flip-card">
-	<div class="flip-card-inner">
-		<div class="flip-card-front">
-			<img src = "images/homepage/swift.png" alt = "swift" class="work_page"/>
-</div>
-<div class="flip-card-back">
-	<h4>SWIFT</h4>
-	<p>UX Design/Research </p>
-	<p>SI 482: Interaction Design Studio</p>
-</div>
-</div>
-</div>
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front" id="byb">
+					<!-- <img src = "images/homepage/byb.png" alt = "byb" class="work_page"/> -->
+				</div>
+				<div class="flip-card-back">
+						<h4>Backyard Brains</h4>
+						<p>UX Design/Research </p>
+						<p>SI 405/487: User Experience Final Project</p>
+						<p><a href="byb.html" target="_blank">View more</a></p>
+				</div>
+			</div>
+		</div>
 
-<div class="flip-card">
-	<div class="flip-card-inner">
-		<div class="flip-card-front">
-			<img src = "images/homepage/byb.png" alt = "byb" class="work_page"/>
-</div>
-<div class="flip-card-back">
-	<h4>Backyard Brains</h4>
-	<p>UX Design/Research </p>
-	<p>SI 405/487: User Experience Final Project</p>
-</div>
-</div>
-</div>
-
+	</div>
 
 	</main>
 
 	<footer>
-		<p>Danielle Godick</p>
-  	<p>University of Michigan 2020</p>
-    <p>Contact information: <a href="mailto:godickdanielle@gmail.com"> godickdanielle@gmail.com</a></p>
+		<p>Danielle Godick <br/> University of Michigan 2020 <br/> Contact information: <a href="mailto:godickdanielle@gmail.com"> godickdanielle@gmail.com</a></p>
 	</footer>
+
 
 </body>
 </html>

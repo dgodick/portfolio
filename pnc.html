@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Work</title>
+	<title>PNC</title>
   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -11,6 +11,10 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160244040-1"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -25,45 +29,65 @@
   <div class="skip"><a href="#main">Skip to Main Content</a></div>
 
 	<header>
-		<nav>
-			<h1>DANIELLE GODICK</h1>
-      <ul class="nav_links">
-  			<li class="nav_item"><a href="index.html">About</a></li>
-  			<li class="nav_item"><a href="work.html">Work</a></li>
-  		</ul>
+		<nav class="navbar">
+			<label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+							<i class="fa fa-bars"></i>
+							<!-- Menu -->
+					</label>
+			<a href="index.html" class="logo">Danielle Godick</a>
+			<input type="checkbox" id="chkToggle"></input>
+			<ul class="main-nav" id="js-menu">
+				<li>
+					<a href="index.html" class="nav-links">About</a>
+				</li>
+				<li>
+					<a href="#" class="nav-links">Work</a>
+				</li>
+			</ul>
 		</nav>
 	</header>
 
 	<main>
+		<button onclick="topFunction()" id="scrollButton" title="Go to top">Top</button>
 		<h2>PNC FINANCIAL SERVICES GROUP</h2>
-    <h4>Technology & Innovation Intern - Bussiness Systems Analyst
+    <h4>Technology &amp; Innovation Intern - Business Systems Analyst
     <br>Summer 2019 | Pittsburgh, PA</br></h4>
 
+	<div class="pnclogo">
     <img src = "images/pncbank.jpg" alt="pnclogo" id="headerimage"/>
+	</div>
 
+	<div class="pncinfo">
     <h3>OVERVIEW</h3>
 
-		<p>During this summer internship, I worked on Scrum and Kanban Agile teams for two internal technology-related applications, where I participated in requirement gathering sessions, documented requirements, collaborated with business units, developers, and product owners. In addition, I worked on a Capstone Project with four other tech interns, where we were to propose a solution to a current issue occurring within the company. Both my day-to-day work, as well as my Capstone Project, revolved around data, which taught me to be more methodical and meticulous, as one small mistake could affect the entire dataset and have serious consequences. This experience not only taught me technical skills, but I also learned about personal interaction. Everything I worked on was collaborative and in a team setting, as the company emphasized an agile environment. As a result, I have developed a passion for working at the intersection of technology, data, and people.</p>
+		<p>During this summer internship, I worked on Scrum and Kanban Agile teams for two internal technology-related applications, where I participated in requirement gathering sessions, documented requirements, collaborated with business units, developers, and product owners. In addition, I worked on a Capstone Project with four other tech interns, where we were to propose a solution to a current issue occurring within the company. Both my day-to-day work, as well as my Capstone Project, revolved around data (primarily Excel data), which taught me to be more methodical and meticulous, as one small mistake could affect the entire dataset and have serious consequences. This experience not only taught me technical skills, but I also learned about personal interaction. Everything I worked on was collaborative and in a team setting, as the company emphasized an agile environment. As a result, I have developed a passion for working at the intersection of technology, data, and people.</p>
+
+		<div class="excel_pic">
+			<img src = "images/excel.jpg" alt="excel" id="excel">
+		</div>
 
     <h3>CAPSTONE PROJECT</h3>
 
     <p>My team was assigned the topic of Alternate Work Areas (AWA), which falls under Business Continuity Management, for when primary work locations are unavailable. I analyzed the current conditions and processes using Excel data and Tableau. I presented our recommendations along with my team to PNC executives, where we proposed creating more AWA space in PNC-owned buildings, not renewing an expiring IBM contract, and utilizing Tableau to keep data better organized and up-to-date. Please contact me if you’d like to hear more about this project!</p>
 
-      <img src = "images/tableau.jpg" alt="tableau" id="tableau"/>
-      <img src = "images/excel.jpg" alt="excel" id="excel"/>
+
+		<div class="tableau_pic">
+      <img src = "images/tableau.jpg" alt="tableau" id="tableau">
+		</div>
+
+
 
     <h3>VENTURE VAULT COMPETITION</h3>
 
     <p>PNC’s “Shark Tank”-like competition where my team and I pitched a business idea focused on a specific customer segment that we found lacked proper resources, tools, and knowledge. I conducted market research, competitive analysis, and website prototyping as part of the competition.
     Unfortunately, I am not allowed to post more about this project, but if you’d like to hear more about it, please contact me!</p>
-
+	</div>
 	</main>
 
 	<footer>
-		<p>Danielle Godick</p>
-  	<p>University of Michigan 2020</p>
-    <p>Contact information: <a href="mailto:godickdanielle@gmail.com"> godickdanielle@gmail.com</a></p>
+		<p>Danielle Godick <br/> University of Michigan 2020 <br/> Contact information: <a href="mailto:godickdanielle@gmail.com"> godickdanielle@gmail.com</a></p>
 	</footer>
+	<script type="text/javascript" src="js/top.js"></script>
 
 </body>
 </html>
