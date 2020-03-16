@@ -10,6 +10,10 @@
    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
    <!-- Global site tag (gtag.js) - Google Analytics -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160244040-1"></script>
+   <script
+   src="https://code.jquery.com/jquery-3.4.1.min.js"
+   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+   crossorigin="anonymous"></script>
    <script>
      window.dataLayer = window.dataLayer || [];
      function gtag(){dataLayer.push(arguments);}
@@ -21,14 +25,16 @@
 </head>
 
 <body>
+  <div class="skip"><a href="#skip">Skip to Main Content</a></div>
+
   <header>
     <nav class="navbar">
       <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
-              <i class="fa fa-bars"></i>
+              <i class="fa fa-bars" aria-label="Hamburger menu. Click to open all options"></i>
               <!-- Menu -->
           </label>
       <a href="index.html" class="logo">Danielle Godick</a>
-      <input type="checkbox" id="chkToggle"></input>
+      <input type="checkbox" id="chkToggle">
       <ul class="main-nav" id="js-menu">
         <li>
           <a href="index.html" class="nav-links">About</a>
@@ -40,34 +46,39 @@
     </nav>
 	</header>
 
-<main>
-  <form action="https://formspree.io/xwkoapqg" method="POST">
+<main id="skip">
+  <button onclick="topFunction()" id="scroll_but" title="Go to top">Top</button>
+  <form action="https://formspree.io/xknzjpaw" method="POST">
 
 <fieldset>
-   <legend>Your Info</legend>
+   <h1>Your Info</h1>
    <div class = "contact_form">
-      <label for ="first_name">First Name:</label><input type="text" id ="name" name="name"/>
-      <label for ="last_name">Last Name:</label><input type="text" id ="name" name="name"/>
-      <label for ="emailaddr">Email Address:</label><textarea id = "addr"></textarea>
 
-   <br>Subject of Message:
-   <label for ="subject"></label><textarea id = "subject"></textarea>
-   <br>Input Message Here:
-   <label for ="message"></label><textarea id = "message"></textarea>
+      <label for ="first_name">First Name:</label><input type="text" id ="first_name" name="name">
+      <label for ="last_name">Last Name:</label><input type="text" id ="last_name" name="name">
+      <label for ="emailaddr">Email Address:</label><textarea id = "emailaddr"></textarea>
+
+
+
+   <label for ="subject">Subject of Message:</label><textarea id = "subject" name="subject"></textarea>
+   <label for ="message">Input Message Here:</label><textarea id = "message" name="message"></textarea>
+
 
    <span>
-      <input type="reset"/>
       <input type="submit" value=" Submit"/>
    </span>
    </div>
 
-   </fieldset>
-   </form>
+
+</fieldset>
+</form>
 </main>
 
 
 <footer>
   <p>Danielle Godick <br/> University of Michigan 2020 <br/> Contact information: <a href="mailto:godickdanielle@gmail.com"> godickdanielle@gmail.com</a></p>
 </footer>
+<script type="text/javascript" src="js/top.js"></script>
+
 </body>
 </html>

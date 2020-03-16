@@ -26,16 +26,16 @@
 
 </head>
 <body>
-  <div class="skip"><a href="#main">Skip to Main Content</a></div>
+	<div class="skip"><a href="#skip">Skip to Main Content</a></div>
 
 	<header>
 		<nav class="navbar">
 			<label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
-							<i class="fa fa-bars"></i>
+							<i class="fa fa-bars" aria-label="Hamburger menu. Click to open all options"></i>
 							<!-- Menu -->
 					</label>
 			<a href="index.html" class="logo">Danielle Godick</a>
-			<input type="checkbox" id="chkToggle"></input>
+			<input type="checkbox" id="chkToggle">
 			<ul class="main-nav" id="js-menu">
 				<li>
 					<a href="index.html" class="nav-links">About</a>
@@ -47,11 +47,11 @@
 		</nav>
 	</header>
 
-	<main>
-		<button onclick="topFunction()" id="scrollButton" title="Go to top">Top</button>
-		<h2>PNC FINANCIAL SERVICES GROUP</h2>
-    <h4>Technology &amp; Innovation Intern - Business Systems Analyst
-    <br>Summer 2019 | Pittsburgh, PA</br></h4>
+	<main id="skip">
+		<button onclick="topFunction()" id="scroll_but" title="Go to top">Top</button>
+		<h1>PNC FINANCIAL SERVICES GROUP</h1>
+    <h2>Technology &amp; Innovation Intern - Business Systems Analyst
+    <br>Summer 2019 | Pittsburgh, PA</h2>
 
 	<div class="pnclogo">
     <img src = "images/pncbank.jpg" alt="pnclogo" id="headerimage"/>

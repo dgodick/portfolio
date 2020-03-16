@@ -11,6 +11,10 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160244040-1"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -21,16 +25,16 @@
 
 </head>
 <body>
-  <div class="skip"><a href="#main">Skip to Main Content</a></div>
+	<div class="skip"><a href="#skip">Skip to Main Content</a></div>
 
 	<header class="headerbyb">
 			<nav class="navbar">
 				<label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
-								<i class="fa fa-bars"></i>
+								<i class="fa fa-bars" aria-label="Hamburger menu. Click to open all options"></i>
 								<!-- Menu -->
 						</label>
 				<a href="index.html" class="logo">Danielle Godick</a>
-				<input type="checkbox" id="chkToggle"></input>
+				<input type="checkbox" id="chkToggle">
 				<ul class="main-nav" id="js-menu">
 					<li>
 						<a href="index.html" class="nav-links">About</a>
@@ -43,12 +47,12 @@
 
 	</header>
 
-	<main id="main" class="bybmain">
-		<button onclick="topFunction()" id="scrollButton" title="Go to top">Top</button>
-		<h2>UX DESIGN/RESEARCH
-    <br>SI 405/487: USER EXPERIENCE FINAL PROJECT</br></h2>
-		<h4>School of Information - University of Michigan</h4>
-    <h4>FALL 2019 - winter 2020 (in progress) | ANN ARBOR, MI</h4>
+	<main id="skip" class="bybmain">
+		<button onclick="topFunction()" id="scroll_but" title="Go to top">Top</button>
+		<h1>UX DESIGN/RESEARCH
+    <br>SI 405/487: USER EXPERIENCE FINAL PROJECT</h1>
+		<h2>School of Information - University of Michigan</h2>
+    <h2>FALL 2019 - winter 2020 (in progress) | ANN ARBOR, MI</h2>
 
 		<div class="byb-container">
 
@@ -143,7 +147,7 @@
 	    <p>Internal Stakeholders: The most prominent internal stakeholders for our project are the entities directly employed by the Backyard Brains organization themselves (i.e. BYB researchers/creators, graphic designers, and developers).</p>
 
 			<div class="teacher">
-			<img src = "images/teacher.png" alt="teachers" id="stakeholder"/>
+			<img src = "images/teacher.png" alt="teachers"/>
 		</div>
 
 	    <p>External Stakeholders: The main users of Backyard Brains products, teachers, and their students constitute the main external stakeholders. It is crucial for Backyard Brains to understand customers’ needs and wants when creating their products and doing customer outreach.</p>
@@ -167,19 +171,19 @@
 	      <li>Facilitating contemporal/simultaneous collaboration: ​An important part of hands-on learning is the ability to collaborate and communicate in real time. Whether this is teachers collaborating with other teachers, students collaborating with other students, or a combination of the two, we want to consider the extent to which this is facilitated through the competition.</li>
 	    </ol>
 
-	    <p>Direct Competition:
-	      <br>The most direct competitor is a website called ​Neuroscience for Kids​ that was developed by Dr. Eric H Chudler, the executive director of neurotechnology at the University of Washington. Chudler’s website is aimed at simplifying neuroscience concepts for kids. The online platform provides interactive animations and games to give younger students with an affinity for learning about the inner workings of the brain an opportunity to explore their interests. While operating in a similar space, it is arguably almost always better to learn by doing rather than simply watching or reading. Therefore, Backyard Brains’ interactive, physical experiments that allow students to not just observe, but take an active role in their neuroscience education, definitely has the edge over Chudler’s platform.
+	    <p>Direct Competition:</p>
+	      <p>The most direct competitor is a website called ​Neuroscience for Kids​ that was developed by Dr. Eric H Chudler, the executive director of neurotechnology at the University of Washington. Chudler’s website is aimed at simplifying neuroscience concepts for kids. The online platform provides interactive animations and games to give younger students with an affinity for learning about the inner workings of the brain an opportunity to explore their interests. While operating in a similar space, it is arguably almost always better to learn by doing rather than simply watching or reading. Therefore, Backyard Brains’ interactive, physical experiments that allow students to not just observe, but take an active role in their neuroscience education, definitely has the edge over Chudler’s platform.
 	    </p>
 
-	    <p>Indirect Competition:
-	      <br>The closest indirect competitor Backyard Brains has is the variety of neuroscience textbooks that explain either the same or similar concepts that are portrayed in the Backyard Brains experiment kits. The indirect competitors do not pose much of a threat to Backyard Brains since most neuroscience textbooks are tailored for college students and higher education, and thus not for kids. Ultimately, textbooks serve as indirect competition in terms of their inherent pedagogical value, but lack the interactive capabilities and the ability to serve as a facilitator of classroom collaboration.</br>
-	    </p>
+	    <p>Indirect Competition:</p>
+	      <p>The closest indirect competitor Backyard Brains has is the variety of neuroscience textbooks that explain either the same or similar concepts that are portrayed in the Backyard Brains experiment kits. The indirect competitors do not pose much of a threat to Backyard Brains since most neuroscience textbooks are tailored for college students and higher education, and thus not for kids. Ultimately, textbooks serve as indirect competition in terms of their inherent pedagogical value, but lack the interactive capabilities and the ability to serve as a facilitator of classroom collaboration.</p>
+
 
 	    <p>Analogous Competition:</p>
 	     <p>Analogous competitors would be ​Twitter, Pinterest, online teacher forums, and other online resources for teachers​. Twitter allows teachers to connect with each other and receive advice and resources from these connections. Pinterest and online teacher forums also allow the sharing of resources and ideas.</p>
 
 				<div class="comp">
-	      <img src = "images/twitter.png" alt="twitter" id="competition"/>
+	      <img src = "images/twitter.png" alt="twitter"/>
 	      <img src = "images/pinterest.jpg" alt="pinterest" id="competition"/>
 			</div>
 	      <p>Backyard Brains and the teacher platform we are developing for them are analogous to these other online tools because they all provide a community for and resources to teachers, but in different contexts. Twitter, Pinterest, and teacher forums are all social medias. Backyard Brains is a company selling neuroscience toys that wants to incorporate a teacher resource platform into their site. Both are in different domains and serve their general customers differently, but offer, or will offer, resource sharing for teachers. We can use Twitter, Pinterest, teacher forums, and other teacher-centered platforms to gain insight into customer needs, behaviors, and goals.</p>
