@@ -5,8 +5,8 @@ window.onscroll = function() {scrollFunction(hasOSReducedMotion)};
 function scrollFunction(hasOSReducedMotion) {
     if (!hasOSReducedMotion) {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("scrollButton").style.display = "block";
-          document.getElementById("scrollButton").classList.add('animation-target')
+          document.getElementById("scroll_but").style.display = "block";
+          document.getElementById("scroll_but").classList.add('animation-target')
       } else {
           document.getElementById("scroll_but").style.display = "none";
           document.getElementById("scroll_but").classList.remove('animation-target')
@@ -22,10 +22,10 @@ function topFunction() {
 $(function() {
     // console.log(hasOSReducedMotion)
     if (!hasOSReducedMotion) {
-      $('#scrollButton').focusin(function() {
-          $(this).css('border', '3px solid #fff');
+      $('#scroll_but').focusin(function() {
+          $(this).css('border', '5px solid #fff');
       });
-      $('#scrollButton').focusout(function() {
+      $('#scroll_but').focusout(function() {
           $(this).css('border', 'none');
       });
     }
