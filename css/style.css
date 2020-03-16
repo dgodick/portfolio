@@ -93,18 +93,6 @@ main{
   text-align: justify;
 }
 
-/*.bybmain {
-  /*background-attachment: fixed; /* Parallax effect
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
-  background-image: url("../images/byb_logo.png");
-}*/
-
-/*.about-container {
-
-}*/
 
 .about-image {
   text-align: center;
@@ -141,15 +129,9 @@ main{
 }
 
 
+
+
 h1{
-  color: #871F78;
-  font-size: 40pt;
-  text-align: center;
-  text-shadow: 2px 2px white;
-
-}
-
-h2{
   font-size: 30pt;
   color: #ca2c92;
   text-shadow: 2px 2px black;
@@ -165,7 +147,7 @@ h3{
 
 }
 
-h4{
+h2{
   text-align: center;
   font-size: 15pt;
   color:#00008b;
@@ -240,14 +222,19 @@ ol, ul{
 }
 
 .skip a{
-  background: white;
+  background-color: #ca2c92;
+  color:#fff;
+  border: 1px solid white;
+  cursor: pointer;
   left: 0;
-  padding: 6px;
+  padding: 20px;
+  font-size: 20px;
   position: absolute;
-  top: -30px;
+  top: -70px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
+
 }
 
 .skip a:focus{
@@ -322,7 +309,6 @@ ol, ul{
   resize: vertical;
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: black;
   color: white;
@@ -332,25 +318,11 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=reset] {
-  background-color: black;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: blue;
 }
 
-input[type=reset]:hover {
-  background-color: blue;
-}
-
-/* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
   /*background-color: #f2f2f2;*/
@@ -362,10 +334,10 @@ input[type=reset]:hover {
   width: 300px;
   height: 200px;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
 }
 
-/* This container is needed to position the front and back side */
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -375,7 +347,7 @@ input[type=reset]:hover {
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
@@ -433,10 +405,7 @@ footer p{
   margin-bottom: 30px;
 }
 
-.methodology-list > li {
-  font-size: 14px;
-  font-family: initial;
-}
+
 
 .swift-main-header {
   width: 90%;
@@ -575,23 +544,24 @@ footer p{
 
 
 
-#scrollButton {
+#scroll_but {
 	display: none;
 	position: fixed;
-	bottom: 40px;
-	right: 50px;
+	bottom: 30px;
+  padding: 20px;
+	right: 40px;
 	z-index: 99;
-	font-size: 18px;
-	border: none;
+	font-size:20px;
+	border: 1px solid white;
+  border-radius: 4px;
 	outline: none;
 	background-color:  #ca2c92;
 	color: white;
 	cursor: pointer;
-	padding: 15px;
-	border-radius: 4px;
+
 }
 
-#scrollButton:hover {
+#scroll_but:hover {
 	background-color: #fff;
 	color: #000;
 }
@@ -602,7 +572,7 @@ footer p{
       scroll-behavior: auto;
     }
 
-    #scrollButton{
+    #scroll_but{
       animation: none;
       transition: none !important;
       -webkit-transition: none !important;
